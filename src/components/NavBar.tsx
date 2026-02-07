@@ -1,32 +1,29 @@
-const Navbar = () => {
+import { Link } from "react-router-dom";
 
-  interface MenuItem {
-    label: string;
-    path: string;
-  }
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Contact", path: "/contact" },
+];
 
-  const navbar: MenuItem[] = [
-    { label: "Home", path: "/" },
-    { label: "About", path: "/about" },
-    { label: "Blog", path: "/blog" },
-    { label: "Contact", path: "/contact" },
-  ];
-
+const NavBar = () => {
   return (
-    <div>
-      <nav className="h-16 bg-green-400 text-white flex items-center gap-6 px-6">
-        {navbar.map((item: MenuItem, index: number) => (
-          <a
-            key={index}
-            href={item.path}
-            className="font-medium hover:text-black"
-          >
-            {item.label}
-          </a>
+    <div className="h-32 bg-amber-500 flex items-center px-8">
+      <ul className="flex gap-6 text-lg font-semibold">
+        {navItems.map((item, index) => (
+          <li key={index}>
+            <Link
+              to={item.path}
+              className="hover:text-white transition"
+            >
+              {item.name}
+            </Link>
+          </li>
         ))}
-      </nav>
+      </ul>
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;

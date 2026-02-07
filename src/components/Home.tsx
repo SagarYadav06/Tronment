@@ -1,43 +1,35 @@
+
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-
       {/* Hero Section */}
-      <section className="bg-orange-500 text-white text-center py-20">
-        <h1 className="text-5xl font-bold">Welcome to Neconic 🍔</h1>
-        <p className="mt-4 text-lg">
-          Discover the best food near you
+      <div className="bg-amber-500 text-white py-20 text-center">
+        <h1 className="text-4xl font-bold mb-4">
+          Welcome to Our Website
+        </h1>
+        <p className="text-lg">
+          We build modern & scalable web applications
         </p>
+      </div>
 
-        <button className="mt-6 px-6 py-3 bg-white text-orange-500 font-semibold rounded-lg">
-          Order Now
-        </button>
-      </section>
-
-      {/* Featured Section */}
-      <section className="py-12 px-6">
-        <h2 className="text-3xl font-bold mb-6 text-center">
-          Popular Dishes
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="text-xl font-semibold">Pizza</h3>
-            <p>Cheesy and delicious</p>
-          </div>
-
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="text-xl font-semibold">Burger</h3>
-            <p>Hot and crispy</p>
-          </div>
-
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="text-xl font-semibold">Momos</h3>
-            <p>Spicy and tasty</p>
-          </div>
+      {/* Content Section */}
+      <div className="max-w-6xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-xl font-semibold mb-2">Fast</h2>
+          <p>Optimized performance and clean code.</p>
         </div>
-      </section>
 
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-xl font-semibold mb-2">Responsive</h2>
+          <p>Looks great on mobile, tablet & desktop.</p>
+        </div>
+
+        <div className="bg-white p-6 rounded shadow">
+          <h2 className="text-xl font-semibold mb-2">Scalable</h2>
+          <p>Built to grow with your business.</p>
+        </div>
+      </div>
     </div>
   );
 };
