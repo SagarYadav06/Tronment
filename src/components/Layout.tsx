@@ -1,6 +1,7 @@
  import type { ReactNode } from "react"
 import Footer from "./Footer"
-import Navbar from "./NavBar"
+import NavBar from "./Navbar"
+
 
 interface Iprop {
     children: ReactNode
@@ -10,7 +11,7 @@ interface Iprop {
 const Layout = ({children}: Iprop) => {
   return (
     <div>
-        <Navbar />
+      <NavBar />
         <main>{children}</main>
         <Footer />
     </div>
