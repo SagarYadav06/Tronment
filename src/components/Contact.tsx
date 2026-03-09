@@ -31,7 +31,7 @@ const Contact = () => {
 
             <input
               type="text"
-              placeholder="Your Name"
+              placeholder="Sagar Yadav"
               className="w-full border rounded-lg p-3"
             />
 
